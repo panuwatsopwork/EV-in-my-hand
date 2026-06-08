@@ -3,38 +3,74 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="EV in My Hand — กิจกรรม STEM เรียนรู้รถไฟฟ้าผ่านรถบังคับมีสาย DIY สำหรับนักเรียนมัธยมต้น"/>
+<meta property="og:title" content="EV in My Hand"/>
+<meta property="og:description" content="เข้าใจรถไฟฟ้า เริ่มจากมือเรา — STEM Activity for Grade 7–9"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://panuwatsopwork.github.io/EV-in-my-hand/"/>
 <meta http-equiv="refresh" content="0; url=./ev_in_my_hand_summary_v2.html"/>
 <title>EV in My Hand</title>
-<link rel="canonical" href="./ev_in_my_hand_summary_v2.html"/>
+<link rel="canonical" href="https://panuwatsopwork.github.io/EV-in-my-hand/"/>
 <style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   body {
     min-height: 100vh;
     margin: 0;
+    padding: 20px;
     display: grid;
     place-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: #f4f1eb;
     color: #1a1a1a;
   }
+
   .card {
-    width: min(90vw, 520px);
+    width: min(100%, 520px);
     padding: 32px;
     border: 1.5px solid #1a1a1a;
     background: #fff;
     text-align: center;
   }
+
   h1 {
     margin: 0 0 12px;
     color: #00a651;
-    font-size: 28px;
+    font-size: clamp(24px, 8vw, 28px);
+    line-height: 1.2;
   }
+
   p {
     margin: 0 0 18px;
     line-height: 1.6;
+    font-size: 15px;
   }
+
   a {
     color: #00733a;
     font-weight: 700;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 0;
+      background: #fff;
+    }
+
+    .card {
+      min-height: 100vh;
+      width: 100%;
+      border: none;
+      display: grid;
+      align-content: center;
+      padding: 24px 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 </style>
 </head>
